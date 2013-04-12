@@ -1,5 +1,2 @@
 - if @auth.present?
-  .row
-    .span1
-    .span11
-      = link_to(@auth.username, '/login', :method => :delete, :remote => true, :class => 'button tiny radius alert')
+  = link_to('Logout', '/login', :method => :delete, :remote => true, :class => 'btn btn-warning')

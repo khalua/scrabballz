@@ -1,3 +1,9 @@
 - if @auth.present?
-  - @channels.each do |channel|
-    = channel.name
+  %table.table
+    %thead
+      %tr
+        %th Click on a channel
+    %tbody
+    - @channels.each do |channel|
+      %tr
+        %td.channel= channel.name

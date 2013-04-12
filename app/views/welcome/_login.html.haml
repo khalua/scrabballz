@@ -1,7 +1,4 @@
 - if @auth.nil?
-  .row
-    .span1
-    .span11
-      = form_tag '/login', :remote => true do
-        = text_field_tag :username, nil, :placeholder => 'Username', :autofocus => true
-        = submit_tag 'Log in', :class => 'btn btn-success'
+  = form_tag '/login', :remote => true do
+    = text_field_tag :username, nil, :placeholder => 'Username', :autofocus => true
+    = submit_tag 'Log in', :class => 'btn btn-success'

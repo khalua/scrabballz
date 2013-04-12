@@ -1,11 +1,19 @@
-#login
-  = render(:partial => 'login')
+.row
+  .span1
+  .span6
+    #login
+      = render(:partial => 'login')
+    %br
 
-#logout
-  = render(:partial => 'logout')
+    #logout
+      = render(:partial => 'logout')
+    %br
 
-#channel_form
-  = render(:partial => 'channel_form')
+    #channel_form
+      = render(:partial => 'channel_form')
 
-#channels
-  = render(:partial => 'channels')
+    #channels
+      = render(:partial => 'channels')
+  .span5
+    #chat_box
+      = render(:partial => 'chat_box')

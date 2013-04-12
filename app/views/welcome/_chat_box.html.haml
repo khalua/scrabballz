@@ -1,0 +1,7 @@
+- if @auth.present?
+  = form_tag '/chat', :remote => true do
+    = text_field_tag 'chat_message', nil, :autofocus => true
+    = hidden_field_tag 'chat_channel'
+    = button_tag 'Chat', :id => 'chat_button', :class => 'btn'
+  %hr
+  #chat_message_list

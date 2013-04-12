@@ -6,4 +6,5 @@ R20130411Scrabble::Application.routes.draw do
   post '/channel' => 'channels#create'
   get '/refresh' => 'channels#refresh'
 
+  post '/chat' => 'game#chat'
   end

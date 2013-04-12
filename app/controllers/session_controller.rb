@@ -7,6 +7,7 @@ class SessionController < ApplicationController
     user.save
     session[:username] = user.username
     authenticate
+    @channels = Channel.order(:name)
   end
 
   def destroy
@@ -14,5 +15,6 @@ class SessionController < ApplicationController
     @auth.save
     session[:username] = nil
     authenticate
+    @channels = Channel.order(:name)
   end
 end
