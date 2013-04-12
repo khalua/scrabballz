@@ -1,0 +1,11 @@
+- if @auth.present?
+  .row
+    .span2
+      = form_tag '/channel', :remote => true do
+        = text_field_tag 'channel', nil, :autofocus => true
+        = submit_tag 'Add Channel', :class => 'button tiny radius'
+    .span10
+  .row
+    .span2
+      = link_to('Refresh List', '/refresh', :remote => true, :class => 'button tiny radius success')
+    .span10
